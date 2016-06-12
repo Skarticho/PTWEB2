@@ -124,6 +124,9 @@ a:focus {
     color: #fff;
 }
 
+.img-menu{
+    height: 20px;
+}
 
 /******Intro*******/
 .intro {
