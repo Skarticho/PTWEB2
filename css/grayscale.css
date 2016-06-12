@@ -124,6 +124,90 @@ a:focus {
     color: #fff;
 }
 
+
+/******Intro*******/
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    color: #fff;
+    background: url(../img/pulpfiction.jpeg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align:bottom;
+    padding-bottom: 10px
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+    background-color: rgba(229,35,50,0.7);
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+    background-color: rgba(229,35,50,0.7);
+}
+
+.logo-left:before{
+    color: black;
+    content: '';
+    background: #E42332;
+    position: absolute;
+    top: 0;
+    width: 500px;
+    height: 500px;
+    left: -400px;
+    webkit-transform: skew(-45deg);
+    -moz-transform: skew(-65deg);
+    -ms-transform: skew(-65deg);
+    -o-transform: skew(-65deg);
+    transform: skew(-55deg);
+}
+
+
+/******About*******/
+
+#about{
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding : 150px;
+}
+
+/******Competence******/
+
+#competence{
+    width: 100%;
+    color: #fff;
+    background-color: green;
+    padding : 150px;
+}
+
+/*******Portfolio********/
+
+#portfolio{
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding : 150px;
+}
+
+#contact{
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding : 150px;
+}
+
+/*******PC******/
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -142,33 +226,6 @@ a:focus {
     }
 }
 
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-}
-
-.intro .intro-body .intro-text {
-    font-size: 18px;
-}
 
 @media(min-width:768px) {
     .intro {
@@ -259,21 +316,7 @@ a:focus {
     }
 }
 
-.content-section {
-    padding-top: 100px;
-}
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 
 #map {
     width: 100%;
@@ -282,11 +325,8 @@ a:focus {
 }
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
 
-    .download-section {
+    .competence-section {
         padding: 100px 0;
     }
 
