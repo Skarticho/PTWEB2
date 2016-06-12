@@ -43,7 +43,7 @@ p {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-image:-moz-linear-gradient(left, white, black);
 }
 
 .navbar-custom .navbar-brand {
@@ -52,6 +52,12 @@ p {
 
 .navbar-custom .navbar-brand:focus {
     outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -88,6 +94,11 @@ p {
 .navbar-custom .nav li.active a {
     background-color: rgba(229,35,50,0.7);
 }
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
 
 .img-menu{
     height: 20px;
@@ -187,6 +198,12 @@ p {
     -ms-transform: skew(0, -25deg);
     -o-transform: skew(0, -25deg);
     transform: skew(0, 5deg);
+}
+
+.cv{
+    position: relative;
+    top: 70px;
+    z-index: 3;
 }
 
 /******Competence******/
