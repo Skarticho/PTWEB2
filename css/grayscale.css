@@ -232,6 +232,7 @@ a:focus {
 .competence_titre_logo{
     display: inline-block;
     height: 100px;
+    margin-left: 10px;
 }
 
 .competence_text{
