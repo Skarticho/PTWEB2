@@ -156,7 +156,7 @@ a:focus {
 
 #about{
     width: 100vw;
-    height: 70vh;
+    height: 700px;
     background-color: white;
     color: black;
     padding-top: 100px;
@@ -193,7 +193,7 @@ a:focus {
 
 #cv{
     width: 100vw;
-    height: 30vh;
+    height: 250px;
     color: #fff;
     background-color: #0C0C0C;
     padding-top: 125px; 
@@ -209,7 +209,7 @@ a:focus {
 
 #competence{
     width: 100vw;
-    height: 100vh;
+    height: 950px;
     color: black;
     background-color: white;
     padding-top: 100px;
@@ -278,7 +278,7 @@ a:focus {
 
 #portfolio{
     width: 100vw;
-    height: 100vh;
+    height: 950px;
     background-color: #0C0C0C;
     color: #fff;
     padding-top: 100px;
@@ -288,7 +288,7 @@ a:focus {
 
 #contact{
     width: 100vw;
-    height: 80vh;
+    height: 700px;
     background-color: red;
     color: white;
     padding-top: 100px;
@@ -298,7 +298,7 @@ a:focus {
 
 footer {
     width: 100vw;
-    height: 20vh;
+    height: 200px;
 }
 
 footer p {
