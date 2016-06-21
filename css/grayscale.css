@@ -30,20 +30,6 @@ h6 {
     letter-spacing: 1px;
 }
 
-.Titre_img{
-    display: inline-block;
-    height: 50px;
-    margin-bottom: 100px;
-    margin-left: 10px;
-    margin-top: 25px;
-}
-
-.Titre_logo{
-    display: inline-block;
-    float: left;
-    height: 100px;
-}
-
 a {
     color: #42dca3;
     -webkit-transition: all .2s ease-in-out;
@@ -182,6 +168,27 @@ a:focus {
     line-height: 30px;
 }
 
+.about_img{
+    position: absolute;
+    left: 800px;
+    height: 250px;
+    top: 150px;
+}
+
+.about_titre_img{
+    display: inline-block;
+    height: 50px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.about_titre_logo{
+    display: inline-block;
+    float: left;
+    height: 100px;
+}
+
 /************CV******/
 
 #cv{
@@ -189,7 +196,13 @@ a:focus {
     height: 30vh;
     color: #fff;
     background-color: #0C0C0C;
-    padding-top: 50px;
+    padding-top: 125px; 
+    padding-bottom: 100px;
+}
+
+.CV_text{
+    width: 385px;
+    margin: 0 auto;
 }
 
 /******Competence******/
@@ -200,6 +213,56 @@ a:focus {
     color: black;
     background-color: white;
     padding-top: 100px;
+}
+
+.competence_titre{
+    float: right;
+    margin-right: -250px;
+}
+
+.competence_titre_img{
+    display: inline-block;
+    float: left;
+    height: 50px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.competence_titre_logo{
+    display: inline-block;
+    height: 100px;
+}
+
+.competence_text{
+    margin-top: 150px;
+    width: 80vw;
+}
+
+.logo_inline{
+    display: inline-block;
+}
+
+.logo_line{
+    margin-right: auto;
+    margin-left: auto;
+    width: 780px;
+}
+
+.logo_line_web{
+    margin-right: auto;
+    margin-left: auto;
+    width: 970px;
+}
+
+.competence_logos{
+    margin: 20px;
+    height: 150px;
+}
+
+.logo_text{
+    width: 65px;
+    margin: 0 auto;
 }
 
 /*******Portfolio********/
