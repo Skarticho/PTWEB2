@@ -260,8 +260,9 @@ a:focus {
 }
 
 .logo_text{
-    width: 65px;
+    width: 135px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .title2_logo{
@@ -282,8 +283,26 @@ a:focus {
     padding-bottom: 30px;
 }
 
+.portfolio_titre{
+    
+}
+
+.portfolio_titre_img{
+    display: inline-block;
+    height: 50px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.portfolio_titre_logo{
+    float: left;
+    display: inline-block;
+    height: 100px;
+    margin-left: 10px;
+}
+
 /*******Contact********/
-<<<<<<< HEAD
 
 #contact{
     width: 100vw;
