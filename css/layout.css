@@ -40,10 +40,11 @@ html {
         text-align: center;
         margin-right: 30px;
         margin-left: 30px;
+        background-color: white;
 	}
 	
 	#filters li span.active {
-		background: #e95a44;
+		background-color: #E42332;
 		color:#fff;
 	}
 
@@ -62,8 +63,11 @@ html {
 	.portfolio-wrapper {
 		overflow:hidden;
 		position: relative !important;
-		background: #666;
 		cursor:pointer;
+        height: 250px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: black;
 	}
 
 	
@@ -102,6 +106,7 @@ html {
 	
 .portfolio:hover .label {
     bottom:0;
+    background-color:  rgba(225, 72, 30, 0.3);
 }
 .portfolio:hover img {
     top:-30px;
