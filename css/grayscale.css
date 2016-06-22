@@ -31,7 +31,7 @@ h6 {
 }
 
 a {
-    color: #42dca3;
+    color: red;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -40,7 +40,6 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
 }
 
 .light {
@@ -156,7 +155,7 @@ a:focus {
 
 #about{
     width: 100vw;
-    height: 700px;
+    height: 70vh;
     background-color: white;
     color: black;
     padding-top: 100px;
@@ -193,10 +192,10 @@ a:focus {
 
 #cv{
     width: 100vw;
-    height: 250px;
-    color: #fff;
+    height: 30vh;
+    color: white;
     background-color: #0C0C0C;
-    padding-top: 115px; 
+    padding-top: 125px; 
     padding-bottom: 100px;
 }
 
@@ -209,7 +208,7 @@ a:focus {
 
 #competence{
     width: 100vw;
-    height: 950px;
+    height: 100vh;
     color: black;
     background-color: white;
     padding-top: 100px;
@@ -247,7 +246,6 @@ a:focus {
 .logo_line{
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 60px;
     width: 780px;
 }
 
@@ -263,9 +261,8 @@ a:focus {
 }
 
 .logo_text{
-    width: 140px;
+    width: 65px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .title2_logo{
@@ -280,46 +277,79 @@ a:focus {
 
 #portfolio{
     width: 100vw;
-    height: 950px;
     background-color: #0C0C0C;
     color: #fff;
     padding-top: 100px;
-}
-
-.portfolio_titre_img{
-    display: inline-block;
-    height: 50px;
-    margin-bottom: 100px;
-    margin-left: 10px;
-    margin-top: 25px;
-}
-
-.portfolio_titre_logo{
-    float: left;
-    display: inline-block;
-    height: 100px;
-    margin-left: 10px;
-}
-
-button{
-    background-color: red;
+    padding-bottom: 30px;
 }
 
 /*******Contact********/
 
 #contact{
     width: 100vw;
-    height: 700px;
-    background-color: red;
-    color: white;
+    color: black;
     padding-top: 100px;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+form{
+    width : 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.identity{
+    margin: 0 auto;
+    width: 1000px;
+    margin-bottom: 30px;
+}
+
+.name, .surname, .email{
+    display: inline-block;
+    margin-right: 20px;
+    width: 250px;
+    height: 40px;
+    border: 6px solid black;
+}
+
+.object {
+    height: 40px;
+    width: 600px;
+    margin-bottom: 30px;
+    border: 6px solid black;
+}
+
+.message {
+    margin: 0 auto;
+    width: 900px;
+    resize: vertical;  
+    margin-bottom: 30px;
+    border: 6px solid black;
+}
+
+.envoyer{
+    float: right;
+    height: 40px;
+    width: 100px;
+    background-color: crimson;
+    border: 6px solid black;
+}
+
+.annuler{
+    float: right;
+    margin-right: 20px;
+    height: 40px;
+    width: 100px;
+    background-color: crimson;
+    border: 6px solid black;
 }
 
 /*******Footer********/
 
 footer {
     width: 100vw;
-    height: 200px;
+    height: 20vh;
 }
 
 footer p {

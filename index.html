@@ -21,6 +21,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/layout.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,6 +29,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+    
 
 </head>
 
@@ -185,16 +190,88 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="container content-section">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-1">
-                <div class="portfolio_titre">
-                    <img class="portfolio_titre_logo" src="img/portfolio_logo.png" alt="Portfolio"/>
-                    <img class="portfolio_titre_img" src="img/Portfolio_titre.png" alt="Portfolio Logo"/>
-                </div>
-                <div class="portofolio button">
-                    <button>Vidéos</button>
-                    <button>Graphisme</button>
-                    <button>Web</button>
-                </div>
+            <div class="col-lg-10 col-lg-offset-1">
+        
+                <div class="container_portfolio">
+
+                    <ul id="filters" class="clearfix">
+                        <li><span class="filter active" data-filter=".video, .graphisme, .web">All</span></li>
+                        <li><span class="filter" data-filter=".video">Vidéos</span></li>
+                        <li><span class="filter" data-filter=".graphisme">Graphisme</span></li>
+                        <li><span class="filter" data-filter=".web">Web</span></li>
+                    </ul>
+
+                    <div id="portfoliolist">
+
+                        <div class="portfolio video" data-cat="video">
+                            <div class="portfolio-wrapper">				
+                                <img src="img/portfolios/logo/5.jpg" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <h2 class="text-title">Bird Document</h2>
+                                        <span class="text-category">Logo</span>
+                                    </div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                        </div>				
+
+                        <div class="portfolio graphisme" data-cat="graphisme">
+                            <div class="portfolio-wrapper">			
+                                <img src="img/portfolios/app/1.jpg" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <h2 class="text-title">Visual Infography</h2>
+                                        <span class="text-category">APP</span>
+                                    </div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                        </div>		
+
+                        <div class="portfolio web" data-cat="web">
+                            <div class="portfolio-wrapper">						
+                                <img src="img/portfolios/web/4.jpg" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <h2 class="text-title">Sonor's Design</h2>
+                                        <span class="text-category">Web design</span>
+                                    </div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                        </div>				
+			
+                        <div class="portfolio video" data-cat="video">
+                            <div class="portfolio-wrapper">			
+                                <img src="img/portfolios/card/1.jpg" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <h2 class="text-title">Typography Company</h2>
+                                        <span class="text-category">Business card</span>
+                                    </div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                        </div>		
+												
+                        <div class="portfolio graphisme" data-cat="graphisme">
+                            <div class="portfolio-wrapper">			
+                                <img src="img/portfolios/icon/4.jpg" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <h2 class="text-title">Domino's Pizza</h2>
+                                        <span class="text-category">Icon</span>
+                                    </div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                        </div>						
+
+
+                    </div>
+
+                </div><!-- container -->
             </div>
         </div>
     </section>
@@ -244,6 +321,38 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script>
+	$(function () {
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.app'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
 
 </body>
 
