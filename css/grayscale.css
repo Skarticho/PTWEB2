@@ -154,7 +154,7 @@ a:focus {
 /******About*******/
 
 #about{
-    width: 100vw;
+    width: 100%;
     height: 700px;
     background-color: white;
     color: black;
@@ -191,7 +191,7 @@ a:focus {
 /************CV******/
 
 #cv{
-    width: 100vw;
+    width: 100%;
     height: 250px;
     color: white;
     background-color: #0C0C0C;
@@ -206,7 +206,7 @@ a:focus {
 /******Competence******/
 
 #competence{
-    width: 100vw;
+    width: 100%;
     height: 950px;
     color: black;
     background-color: white;
@@ -276,7 +276,7 @@ a:focus {
 /*******Portfolio********/
 
 #portfolio{
-    width: 100vw;
+    width: 100%;
     background-color: #0C0C0C;
     color: #fff;
     padding-top: 100px;
@@ -305,11 +305,33 @@ a:focus {
 /*******Contact********/
 
 #contact{
-    width: 100vw;
+    width: 100%;
     color: black;
     padding-top: 100px;
     background-color: white;
     padding-bottom: 30px;
+}
+
+.contact_titre{
+    float: right;
+    margin-right: -125px;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.contact_titre_img{
+    display: inline-block;
+    float: left;
+    height: 50px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.contact_titre_logo{
+    display: inline-block;
+    height: 100px;
+    margin-left: 10px;
 }
 
 form{
@@ -322,6 +344,8 @@ form{
     margin: 0 auto;
     width: 1000px;
     margin-bottom: 30px;
+    margin-top: 150px;
+    clear: both;
 }
 
 .name, .surname, .email{
@@ -346,15 +370,14 @@ form{
     margin-bottom: 30px;
     border: 6px solid black;
 }
-=======
->>>>>>> parent of 0ddcdd6... Mise en page, fin de soirée (21 juin)
 
 .envoyer{
     float: right;
     height: 40px;
     width: 100px;
-    background-color: crimson;
-    border: 6px solid black;
+    background-color: #E42332;
+    color:#fff;
+    border-radius: 10px;
 }
 
 .annuler{
@@ -362,19 +385,66 @@ form{
     margin-right: 20px;
     height: 40px;
     width: 100px;
-    background-color: crimson;
-    border: 6px solid black;
+    background-color: #E42332;
+    color:#fff;
+    border-radius: 10px;
 }
 
 /*******Footer********/
 
 footer {
-    width: 100vw;
-    height: 20vh;
+    width: 100%;
+    height: 330px;
+    padding-top: 50px;
+    background-color: #0C0C0C;
 }
 
 footer p {
     margin: 0;
+}
+
+.footer_info{
+    width: 1000px;
+    margin: 0 auto;
+    height: 160px;
+    margin-bottom: 60px;
+}
+
+.footer_img{
+    width: 160px;
+}
+
+.phone_logo{
+    display: inline-block;
+    float: left;
+}
+
+.phone{
+    display: inline-block;
+    float: left;
+    margin-top: 70px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.adress_logo{
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+}
+
+.adress{
+    display: inline-block;
+    float: right;
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+.footer_copyright{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
 }
 
 /*******PC******/
