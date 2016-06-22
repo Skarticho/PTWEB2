@@ -275,7 +275,7 @@
         </div>
     </section>
     
-    <!-- Contact Section -->
+        <!-- Contact Section -->
     <section id="contact" class="container content-section">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -283,21 +283,24 @@
                 <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
                 <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
                 </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+                <form method=POST action=formmail.php >
+                    <input type=hidden name=subject value=formmail>
+                    <div class="identity">
+                        <input class="surname" type=text name=surname size=30 placeholder="Votre Prénom">
+                        <input class="name" type=text name=name size=30 placeholder="Votre nom">
+                        <input class="email" type=text name=email size=30 placeholder="Votre email">
+                    </div>
+                    <input class="object" type=text name=email size=30 placeholder="Objet">
+                    <textarea class="message" COLS=50 ROWS=6 name=comments placeholder="Votre message"></textarea>
+                    <div>
+                    <input class="envoyer" type=submit value=Envoyer>
+                    <input class="annuler" type=reset value=Annuler>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
-
+    
 
     <!-- Footer -->
     <footer>
@@ -321,6 +324,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
     
+    <!-- Portfolio tri -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 	
@@ -338,7 +342,7 @@
     			  filter: '.filter'	
     		  },
     		  load: {
-      		  filter: '.app'  
+      		  filter: '.video, .graphisme, .web'  
       		}     
 				});								
 			
