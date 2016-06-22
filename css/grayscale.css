@@ -155,7 +155,7 @@ a:focus {
 
 #about{
     width: 100vw;
-    height: 70vh;
+    height: 700px;
     background-color: white;
     color: black;
     padding-top: 100px;
@@ -192,11 +192,10 @@ a:focus {
 
 #cv{
     width: 100vw;
-    height: 30vh;
+    height: 250px;
     color: white;
     background-color: #0C0C0C;
-    padding-top: 125px; 
-    padding-bottom: 100px;
+    padding-top: 110px;
 }
 
 .CV_text{
@@ -208,7 +207,7 @@ a:focus {
 
 #competence{
     width: 100vw;
-    height: 100vh;
+    height: 950px;
     color: black;
     background-color: white;
     padding-top: 100px;
@@ -284,6 +283,7 @@ a:focus {
 }
 
 /*******Contact********/
+<<<<<<< HEAD
 
 #contact{
     width: 100vw;
@@ -327,6 +327,8 @@ form{
     margin-bottom: 30px;
     border: 6px solid black;
 }
+=======
+>>>>>>> parent of 0ddcdd6... Mise en page, fin de soirée (21 juin)
 
 .envoyer{
     float: right;
