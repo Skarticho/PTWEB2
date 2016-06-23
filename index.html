@@ -21,7 +21,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/layout.css"> <!-- CSS Portfolio -->
+    <link rel="stylesheet" href="css/magnific-popup.css"> <!-- CSS Popup -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -74,6 +75,9 @@
 
     <!-- Intro Header -->
     <header class="intro">
+        <video autoplay loop muted id="myVideo">
+                <source src="./video/Skateboard.mp4" type="video/mp4">
+            </video>
         <div class="intro-body">
             <div class="container text-center">
                 <div class="row">
@@ -97,18 +101,19 @@
                     <img class="about_titre_logo" src="img/Pr%C3%A9sentation_logo.png" alt="Présentation Logo"/>
                     <img class="about_titre_img" src="img/Pr%C3%A9sentation_titre.png" alt="Présentation"/>
                 </div>
-                <div class="about_text">
-                    <p>&nbsp Bonjour, enchanté!</p>
-                    <br/>
-                    <p>Je m'appelle Antonin Blanche, je suis actuellement<br/> étudiant en DUT MMI (Métiers du Multimédia et de l'Internet).</p>
-                    <br/>
-                    <p>Je suis passionné par le cinéma et la création vidéo en général,<br/> je suis capable d'y participer de la réalisation à la post-production.</p>
-                    <p>Toujours avec coeur et passion!</p>
+                <div class="about">
+                    <div class="about_text">
+                        <p>&nbsp Bonjour, enchanté!</p>
+                        <br/>
+                        <p>Je m'appelle Antonin Blanche, je suis actuellement<br/> étudiant en DUT MMI (Métiers du Multimédia et de l'Internet).</p>
+                        <br/>
+                        <p>Je suis passionné par le cinéma et la création vidéo en général,<br/> je suis capable d'y participer de la réalisation à la post-production.</p>
+                        <p>Toujours avec coeur et passion!</p>
+                    </div>
+                    <div>
+                        <img class="about_img" src="img/Pr%C3%A9sentation_img.png" alt="myFace"/>
+                    </div>
                 </div>
-                <div>
-                    <img class="about_img" src="img/Pr%C3%A9sentation_img.png" alt="myFace"/>
-                </div>
-                
             </div>
         </div>
     </section>
@@ -157,7 +162,6 @@
                         </div>
                     </div>
                     <div>
-                        <img class="title2_logo" src="img/Vid%C3%A9o_logo.png" alt="logo vidéo"/>
                         <h2>Web</h2>
                     </div>
                     <div class="logo_line_web">
@@ -201,32 +205,35 @@
                     </ul>
 
                     <div id="portfoliolist">
-
-                        <div class="portfolio video" data-cat="video">
-                            <div class="portfolio-wrapper">				
-                                <img src="img/portfolios/video/PPF.jpg" width="400px" height="250px" alt="" />
-                                <div class="label">
-                                    <div class="label-text">
-                                        <h2 class="text-title">Bird Document</h2>
-                                        <span class="text-category">Logo</span>
+                        <a class="image-popup" href="img/portfolios/video/PPF.jpg">
+                            <div class="portfolio video" data-cat="video">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/video/PPF.jpg" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Bird Document</h2>
+                                            <span class="text-category">Logo</span>
+                                        </div>
+                                        <div class="label-bg"></div>
                                     </div>
-                                    <div class="label-bg"></div>
                                 </div>
                             </div>
-                        </div>				
-
-                        <div class="portfolio graphisme" data-cat="graphisme">
-                            <div class="portfolio-wrapper">			
-                                <img src="img/portfolios/video/PPF.jpg" width="400px" height="250px" alt="" />
-                                <div class="label">
-                                    <div class="label-text">
-                                        <h2 class="text-title">Visual Infography</h2>
-                                        <span class="text-category">APP</span>
+                        </a>
+                        
+                        <a class="video-popup" href="https://www.youtube.com/watch?v=Y7zJZEdAD8I">
+                            <div class="portfolio video" data-cat="video">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/video/PPF.jpg" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Bird Document</h2>
+                                            <span class="text-category">Logo</span>
+                                        </div>
+                                        <div class="label-bg"></div>
                                     </div>
-                                    <div class="label-bg"></div>
                                 </div>
                             </div>
-                        </div>		
+                        </a>
 
                         <div class="portfolio web" data-cat="web">
                             <div class="portfolio-wrapper">						
@@ -364,6 +371,37 @@
 		
 	});	
 	</script>
+
+ 
+    <!-- Import des Magnific Popup (js et css) -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    
+    <!-- Magnific Popup Image -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+          $(".image-popup").magnificPopup({
+            type: "image",
+            closeOnContentClick: true,
+          });
+        });
+    </script>
+
+    <!-- Magnific Popup Video -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+          $(".video-popup").magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+          });
+        });
+    </script>
 
 </body>
 
