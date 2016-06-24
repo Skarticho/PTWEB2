@@ -29,7 +29,7 @@ html {
 	
 	#filters li span {
 		display: block;
-		padding:5px 20px;		
+		padding:5px;		
 		text-decoration:none;
 		color:#666;
 		cursor: pointer;
@@ -52,7 +52,8 @@ html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
-	width:400px;
+	width: 29.3vw;
+    height: 20.vw;
 	margin:1%;
 	display:none;
 	float:left;
@@ -60,14 +61,19 @@ html {
     margin-bottom: 30px;
 }
 
+.portfolio miniature{
+	width: 29.3vw;
+    height: 20.vw;
+
+}
 	.portfolio-wrapper {
 		overflow:hidden;
 		position: relative !important;
 		cursor:pointer;
         height: 250px;
-        margin-left: 20px;
-        margin-right: 20px;
         background-color: black;
+        width: 400px;
+        margin: 0 auto;
 	}
 
 	
@@ -96,7 +102,7 @@ html {
 		z-index:500;
 		padding:5px 8px;
         font-size: 20pt;
-        top: 100px  
+        top: 100px; 
 }
 			
 .portfolio .text-category {

@@ -6,16 +6,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Portfolio">
     <meta name="author" content="Antonin Blanche">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Portfolio</title>
+    
+    <!-- Icone -->
+    <link rel="icon" type="image/png" href="img/icone/icone.png" />
+    <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <![endif]-->
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -42,6 +47,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll icone" href="#page-top">
+                    <img src="img/logo/logo_menu.png"> <span class="light">Antonin Blanche</span>
+                </a>
+            </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -74,14 +87,15 @@
     </nav>
 
     <!-- Intro Header -->
+    <!--<video autoplay loop muted id="myVideo">
+        <source src="./video/Skateboard.mp4" type="video/mp4">
+    </video> -->
     <header class="intro">
-        <video autoplay loop muted id="myVideo">
-                <source src="./video/Skateboard.mp4" type="video/mp4">
-            </video>
         <div class="intro-body">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
+                        <img src="img/logo/logo.png" alt="logo AB" class="ABLogo"/>
                         <h1 class="brand-heading">Antonin Blanche</h1>
                         <p class="intro-text">Audiovisuel, Cadreur, Monteur.</p>
                         <a href="#about" class="btn btn-circle page-scroll">
@@ -123,7 +137,7 @@
         <div class="cv-section">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="CV_text">
-                        <h2>Télécharger mon CV</h2>
+                        <a href="pdf/CV.pdf" target="_blank"><h2>Télécharger mon CV</h2></a>
                     </div>
                 </div>
             </div>
@@ -162,6 +176,7 @@
                         </div>
                     </div>
                     <div>
+                        <img class="title2_logo" src="img/web_logo.png" alt="logo vidéo"/>
                         <h2>Web</h2>
                     </div>
                     <div class="logo_line_web">
@@ -204,14 +219,170 @@
                         <li><span class="filter" data-filter=".web">Web</span></li>
                     </ul>
 
+                    
                     <div id="portfoliolist">
+                        <!-------------- Vidéos -------------->
+                        <a class="video-popup" href="video/Crier.mp4">
+                            <div class="portfolio video" data-cat="video">
+                                <div class="portfolio-wrapper">
+                                    <img class="miniature" src="img/portfolios/video/crier.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">PPFM 2016 2ème Vidéo</h2>
+                                            <span class="text-category">Très court métrage</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
                         <a class="image-popup" href="img/portfolios/video/PPF.jpg">
                             <div class="portfolio video" data-cat="video">
                                 <div class="portfolio-wrapper">
                                     <img src="img/portfolios/video/PPF.jpg" width="400px" height="250px" alt="" />
                                     <div class="label">
                                         <div class="label-text">
-                                            <h2 class="text-title">Bird Document</h2>
+                                            <h2 class="text-title">Participation au Plus Petit Festival du Monde 2016</h2>
+                                            <span class="text-category">Très court métrage</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="video-popup" href="video/Fusion.mp4">
+                            <div class="portfolio video" data-cat="video">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/video/fusion.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">PPFM 2016 3ème Vidéo</h2>
+                                            <span class="text-category">Très court métrage</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="video-popup" href="video/ITV.mp4">
+                            <div class="portfolio video" data-cat="video">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/video/itv.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Interview d'Antoine Rollin</h2>
+                                            <span class="text-category">Interview</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="video-popup" href="video/Alsa'vient.mp4">
+                            <div class="portfolio video" data-cat="video">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/video/alsa'vient.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Projet fictif Alsa'vient</h2>
+                                            <span class="text-category">Vidéo de communication</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="video-popup" href="video/futurama.mp4">
+                            <div class="portfolio video" data-cat="video">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/video/futurama.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Animation Futurama</h2>
+                                            <span class="text-category">Motion Design</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="video-popup" href="video/gun_tension.mp4">
+                            <div class="portfolio video" data-cat="video">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/video/gun_tension.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Gun Tension</h2>
+                                            <span class="text-category">Court Métrage</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        
+                        
+                        <!-------------- Graphisme -------------->
+                        
+                        <a class="image-popup" href="img/portfolios/graphisme/pictos-01.png">
+                            <div class="portfolio graphisme" data-cat="graphisme">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/graphisme/picto_miniature-10.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Pictos pour application</h2>
+                                            <span class="text-category">Pictogrammes</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="image-popup" href="img/portfolios/graphisme/Portes_Ouvertes.png">
+                            <div class="portfolio graphisme" data-cat="graphisme">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/graphisme/Portes_Ouvertes_miniature.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Portes Ouvertes IUT</h2>
+                                            <span class="text-category">Affiche Photoshop</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="image-popup" href="img/portfolios/graphisme/Jimi-Hendrix.png">
+                            <div class="portfolio graphisme" data-cat="graphisme">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/graphisme/Jimi-Hendrix_miniature.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Concours de Air Guitare</h2>
+                                            <span class="text-category">Affiche Photoshop</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="image-popup" href="img/portfolios/graphisme/fablab.png">
+                            <div class="portfolio graphisme" data-cat="graphisme">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/graphisme/fablab_miniature.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Fablab de Colmar</h2>
                                             <span class="text-category">Logo</span>
                                         </div>
                                         <div class="label-bg"></div>
@@ -220,13 +391,58 @@
                             </div>
                         </a>
                         
-                        <a class="video-popup" href="https://www.youtube.com/watch?v=Y7zJZEdAD8I">
-                            <div class="portfolio video" data-cat="video">
+                        <a class="image-popup" href="img/portfolios/graphisme/Picto_garage.png">
+                            <div class="portfolio graphisme" data-cat="graphisme">
                                 <div class="portfolio-wrapper">
-                                    <img src="img/portfolios/video/PPF.jpg" width="400px" height="250px" alt="" />
+                                    <img src="img/portfolios/graphisme/Picto_garage_miniature.png" width="400px" height="250px" alt="" />
                                     <div class="label">
                                         <div class="label-text">
-                                            <h2 class="text-title">Bird Document</h2>
+                                            <h2 class="text-title">Pictos pour garage</h2>
+                                            <span class="text-category">Pictogrammes</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="image-popup" href="img/portfolios/graphisme/flocons.png">
+                            <div class="portfolio graphisme" data-cat="graphisme">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/graphisme/flocons_miniature.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Flocons</h2>
+                                            <span class="text-category">Réasisation photoshop</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="image-popup" href="img/portfolios/graphisme/Star-Poulpe.png">
+                            <div class="portfolio graphisme" data-cat="graphisme">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/graphisme/Star-Poulpe_miniature.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Star Poulpe Affiche de l'Espace</h2>
+                                            <span class="text-category">Affiche Photoshop</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a class="image-popup" href="img/portfolios/graphisme/formes.png">
+                            <div class="portfolio graphisme" data-cat="graphisme">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/graphisme/formes_minitaures.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Logos Divers</h2>
                                             <span class="text-category">Logo</span>
                                         </div>
                                         <div class="label-bg"></div>
@@ -234,47 +450,70 @@
                                 </div>
                             </div>
                         </a>
-
-                        <div class="portfolio web" data-cat="web">
-                            <div class="portfolio-wrapper">						
-                                <img src="img/portfolios/video/PPF.jpg" width="400px" height="250px" alt="" />
-                                <div class="label">
-                                    <div class="label-text">
-                                        <h2 class="text-title">Sonor's Design</h2>
-                                        <span class="text-category">Web design</span>
+                        
+                        <a class="image-popup" href="img/portfolios/graphisme/melon.png">
+                            <div class="portfolio graphisme" data-cat="graphisme">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/graphisme/melon_miniature.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Homme Melon</h2>
+                                            <span class="text-category">Montage Photoshop</span>
+                                        </div>
+                                        <div class="label-bg"></div>
                                     </div>
-                                    <div class="label-bg"></div>
                                 </div>
                             </div>
-                        </div>				
-			
-                        <div class="portfolio video" data-cat="video">
-                            <div class="portfolio-wrapper">			
-                                <img src="img/portfolios/video/PPF.jpg" width="400px" height="250px" alt="" />
-                                <div class="label">
-                                    <div class="label-text">
-                                        <h2 class="text-title">Typography Company</h2>
-                                        <span class="text-category">Business card</span>
+                        </a>
+                        
+                        
+                        
+                        <!-------------- Web -------------->
+                        
+                        <a class="image-popup" href="img/portfolios/web/abq.png">
+                            <div class="portfolio web" data-cat="web">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/web/abq_miniature.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">ABQ London</h2>
+                                            <span class="text-category">Site CMS Wordpress</span>
+                                        </div>
+                                        <div class="label-bg"></div>
                                     </div>
-                                    <div class="label-bg"></div>
                                 </div>
                             </div>
-                        </div>		
-												
-                        <div class="portfolio graphisme" data-cat="graphisme">
-                            <div class="portfolio-wrapper">			
-                                <img src="img/portfolios/video/PPF.jpg" width="400px" height="250px" alt="" />
-                                <div class="label">
-                                    <div class="label-text">
-                                        <h2 class="text-title">Domino's Pizza</h2>
-                                        <span class="text-category">Icon</span>
+                        </a>
+                        
+                        <a class="image-popup" href="img/portfolios/graphisme/pictos-01.png">
+                            <div class="portfolio web" data-cat="web">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/graphisme/picto_miniature-10.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">SevenOaks</h2>
+                                            <span class="text-category">Site HTML/CSS</span>
+                                        </div>
+                                        <div class="label-bg"></div>
                                     </div>
-                                    <div class="label-bg"></div>
                                 </div>
                             </div>
-                        </div>						
-
-
+                        </a>
+                        
+                        <a class="image-popup" href="img/portfolios/video/crier.png">
+                            <div class="portfolio web" data-cat="web">
+                                <div class="portfolio-wrapper">
+                                    <img src="img/portfolios/graphisme/picto_miniature-10.png" width="400px" height="250px" alt="" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <h2 class="text-title">Biblio'Tech</h2>
+                                            <span class="text-category">Application PHP</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
 
                 </div><!-- container -->
@@ -392,8 +631,8 @@
         $(document).ready(function() {
             
           $(".video-popup").magnificPopup({
-            disableOn: 700,
             type: 'iframe',
+            disableOn: 700,
             mainClass: 'mfp-fade',
             removalDelay: 160,
             preloader: false,
