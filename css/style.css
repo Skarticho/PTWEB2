@@ -56,7 +56,7 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 700;
+    width: 300px;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -80,8 +80,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
-    background-color: transparent;
+    background-color:   rgba(229,35,50,0.3);
 }
 
 .navbar-custom .nav li a:focus,
@@ -110,7 +109,7 @@ a:focus {
     margin-top: -10px
 }
 .icone {
-    width: 125%;
+    width: 106%;
 }
 
 .icone span {
@@ -156,12 +155,13 @@ a:focus {
 
 .ABLogo{
     width: 15vw;
+    margin-bottom: 100px;
 }
 
 .intro .intro-body {
     display: table-cell;
     vertical-align:bottom;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 .intro .intro-body .brand-heading {
@@ -169,7 +169,7 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 40px;
 }
 
 
@@ -177,7 +177,7 @@ a:focus {
 
 #about{
     width: 100%;
-    height: 100%px;
+    height: 850px;
     background-color: white;
     color: black;
     padding-top: 100px;
@@ -185,27 +185,27 @@ a:focus {
 }
 
 .about{
-    width: 125%;
-    margin: auto;
-    margin-right: 0 !important;
+    width: 1100px;
+    height: 400px;
+    margin: 0 auto !important;
 }
 
 .about_text{
     font-size: 25px;
-    width: 800px;
+    width: 70%;
     line-height: 30px;
     display: inline-block;
     float: left;
 }
 
 .about_img{
-    display: inline-block;
-    height: 20vw;
+    height: 250px;
+    float: right;
 }
 
 .about_titre_img{
     display: inline-block;
-    height: 4vw;
+    height: 50px;
     margin-bottom: 100px;
     margin-left: 10px;
     margin-top: 25px;
@@ -246,7 +246,7 @@ a:focus {
 
 #competence{
     width: 100%;
-    height: 950px;
+    height: 1000px;
     color: black;
     background-color: white;
     padding-top: 100px;
@@ -254,13 +254,15 @@ a:focus {
 
 .competence_titre{
     float: right;
+    width: 100%;
     margin-right: -250px;
+    height: 100px;
 }
 
 .competence_titre_img{
     display: inline-block;
-    float: left;
-    height: 4vw;
+    float: right;
+    height: 50px;
     margin-bottom: 100px;
     margin-left: 10px;
     margin-top: 25px;
@@ -268,6 +270,7 @@ a:focus {
 
 .competence_titre_logo{
     display: inline-block;
+    float: right;
     height: 100px;
     margin-left: 10px;
 }
@@ -302,6 +305,7 @@ a:focus {
     width: 135px;
     margin: 0 auto;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .title2_logo{
@@ -322,10 +326,6 @@ a:focus {
     padding-bottom: 30px;
 }
 
-.portfolio_titre{
-    
-}
-
 .portfolio_titre_img{
     display: inline-block;
     height: 50px;
@@ -339,6 +339,12 @@ a:focus {
     display: inline-block;
     height: 100px;
     margin-left: 10px;
+}
+
+.miniature{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /*******Contact********/
@@ -374,14 +380,14 @@ a:focus {
 }
 
 form{
-    width : 900px;
+    width : 80%;
     margin: 0 auto;
     margin-bottom: 30px;
 }
 
 .identity{
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
     margin-bottom: 30px;
     margin-top: 150px;
     clear: both;
@@ -390,21 +396,21 @@ form{
 .name, .surname, .email{
     display: inline-block;
     margin-right: 20px;
-    width: 250px;
+    width: 25%;
     height: 40px;
     border: 6px solid black;
 }
 
 .object {
     height: 40px;
-    width: 600px;
+    width: 50%;
     margin-bottom: 30px;
     border: 6px solid black;
 }
 
 .message {
     margin: 0 auto;
-    width: 900px;
+    width: 100%;
     resize: vertical;  
     margin-bottom: 30px;
     border: 6px solid black;
@@ -440,19 +446,15 @@ footer {
     background-color: #0C0C0C;
 }
 
-footer p {
-    margin: 0;
-}
-
 .footer_info{
-    width: 1000px;
+    width: 95%;
     margin: 0 auto;
     height: 160px;
     margin-bottom: 60px;
 }
 
 .footer_img{
-    width: 160px;
+    width: 15%;
 }
 
 .phone_logo{
@@ -488,40 +490,7 @@ footer p {
     font-size: 20px;
 }
 
-/*******PC******/
-@media(min-width:768px) {
-    .navbar-custom {
-        padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
-    }
-}
-
-
-@media(min-width:768px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 26px;
-    }
-}
+/*****Bouton*****/
 
 .btn-circle {
     width: 70px;
@@ -597,31 +566,81 @@ footer p {
     }
 }
 
+/*******PC******/
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+}
 
 
-<<<<<<< HEAD
+
+/***Responsiv****/
+
+@media(max-width: 1240px){
+    .about_text{
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .about_img{
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .competence_titre{
+    float: none;
+    width: 100%;
+    margin-right: -200px;
+    height: 100px;
+    }
+    .contact_titre{
+    float: right;
+    width: 571px;
+    margin-right: 0px;
+    height: 100px;
+    }
+}
+
+/*@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+}
+
+
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
-=======
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
 }
 
 @media(min-width:767px) {
 
     .competence-section {
         padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
->>>>>>> parent of ae0a369... Avancée3 soir1
     }
 }
 
@@ -695,11 +714,9 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
-<<<<<<< HEAD
 
 
-/*******PC******/
-@media(min-width:768px) {
+@media(min-width:991px) {
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
@@ -756,6 +773,4 @@ body {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
-}
-=======
->>>>>>> parent of ae0a369... Avancée3 soir1
+}*/

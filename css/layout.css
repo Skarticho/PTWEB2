@@ -3,13 +3,13 @@ html {
 }
 
 .container_portfolio { 
-    width: 1000px;
+    width: 90%;
     margin-bottom: 50px;
     margin: 0 auto;
 }
 
 #portfoliolist{
-    width: 835px;
+    width: 61.1vw;
     margin: 0 auto;
 }
  
@@ -17,7 +17,7 @@ html {
 	margin:1%;
 	padding:0;
 	list-style:none;
-    width: 640px;
+    width: 46%;
     margin: 0 auto;
     margin-bottom: 50px;
 }
@@ -25,6 +25,7 @@ html {
 	#filters li {
 		float:left;
         margin: 0 auto;
+        width: 25%;
 	}
 	
 	#filters li span {
@@ -101,13 +102,19 @@ html {
 		position: relative;
 		z-index:500;
 		padding:5px 8px;
-        font-size: 20pt;
         top: 100px; 
+        width: 100%;
 }
-			
+
 .portfolio .text-category {
     display:block;
     font-size:15pt;
+}
+
+.portfolio .text-title {
+    display:block;
+    font-size:20pt;
+    line-height: 17px;
 }
 	
 .portfolio:hover .label {
@@ -132,32 +139,11 @@ html {
 
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-	.container_portfolio { 
-		width: 95%; 
-	}
 	
 	#portfoliolist .portfolio {
 		width:48%;
 		margin:1%;
 	}		
-
-	#ads {
-		display:none;
-	}
-	
-}
-
-
-/* #Mobile (Landscape) - Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	.container_portfolio {
-		width: 70%;
-	}
-	
-	#ads {
-		display:none;
-	}
-	
 }
 
 /* #Clearing */
