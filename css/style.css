@@ -614,6 +614,26 @@ footer {
     }
 }
 
+@media(max-width: 1000px){
+    .html, .css, .cms, .mysql, .php{
+        height: 130px;
+        width: 130px;
+    }
+    
+    .about_text{
+        width: 60%;
+        margin-left: 10%;
+    }
+    
+    .about_img{
+        margin-top: 30px;
+    }
+    
+    #about{
+        height: 950px;
+    }
+}
+
 /*@media(min-width:768px) {
     .intro {
         height: 100%;
