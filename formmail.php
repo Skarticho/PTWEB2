@@ -11,6 +11,6 @@ $message .= "$key : $val\n";
 
 mail($TO, $subject, $message, $h);
 
-Header("Location: https://tp.iha.unistra.fr/~blanche/Test_formulaire/index.html");
+Header("Location: https://tp.iha.unistra.fr/~blanche/PTWEB2/index.html");
 
 ?>
