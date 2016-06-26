@@ -125,26 +125,30 @@ html {
     top:-30px;
 }  
 
-	
-
-
-
-/* #Tablet (Portrait) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-	.container_portfolio {
-		width: 768px; 
+@media(max-width: 1140px){
+    
+    #portfoliolist .portfolio{
+        float: none;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    
+    #portfoliolist{
+        width: 50vw;
+        margin: 0 auto;
+    }
+    
+    #filters li span {
+        width: 80px;
+    }
+    #filters li {
 	}
+    #filters {
+        width: 50%;
+    }
 }
 
-
-/*  #Mobile (Portrait) - Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
-	
-	#portfoliolist .portfolio {
-		width:48%;
-		margin:1%;
-	}		
-}
 
 /* #Clearing */
 
